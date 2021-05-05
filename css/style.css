@@ -1,0 +1,115 @@
+/* regole generali */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+.separation-line{
+    border-top: 1px solid #5F6368;
+}
+.small-text{
+    font-size: 0.7rem;;
+}
+
+
+/* header */
+header{
+    color: #5F6368;
+    font-weight: 400;
+    padding: 0 20px;
+}
+/* header: first section */
+header>#intestation{
+    display: flex;
+    padding: 20px 0 10px;
+    align-items: center;
+}
+#intestation>.logo{
+    width: 100px;
+    margin-right: 10px;
+}
+.logo img{
+    width: 100%;
+}
+#intestation>.title{
+    flex-grow: 1;
+    font-size: 1.5rem;
+}
+#intestation>.icons{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.icons>*{
+    cursor: pointer;
+}
+.icons>.user{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+/* header: second section */
+nav>ul{
+    display: flex;
+}
+ul>li{
+    margin-right: 40px;
+    line-height: 30px;
+}
+li.active{
+    color: #3367D6;
+    border-bottom: 2px solid #3367D6;
+}
+
+
+/* main */
+main .container{
+    padding: 20px 0;
+}
+.question{
+    padding: 50px 0 30px;
+}
+.answer{
+    padding-bottom:30px;
+}
+
+
+/* footer */
+footer{
+    padding: 10px 0;
+    color: #5F6368;
+    background-color: #F5F5F5;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#useful-infos ul{
+    display: flex;
+}
+#language i{
+    color: #3367D6;
+}
+#language select{
+    width: 200px;
+}
